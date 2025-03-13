@@ -1,12 +1,50 @@
-# React + Vite
+# Projet React : Tests automatisés avec Selenium + Pipeline CI/CD
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce projet est une application React avec une configuration de **tests automatisés** utilisant **Selenium** et une intégration continue (CI) via **GitLab**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Objectifs du projet  
+- Automatiser les tests fonctionnels avec **Selenium**  
+- Intégrer le pipeline dans **GitLab CI/CD**  
+- Analyser les performances après chaque build  
+- Générer des rapports détaillés après l'exécution des tests  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies utilisées  
+- **React (Vite)** → Framework JavaScript moderne  
+- **Selenium** → Automatisation des tests sur navigateur  
+- **GitLab CI/CD** → Déclenchement des tests après chaque commit  
+- **React Router** → Gestion de la navigation  
+- **CSS** → Styles personnalisés  
+
+---
+
+## Fonctionnalités  
+- Page de connexion avec champ utilisateur et mot de passe  
+- Vérification des identifiants :  
+   - Nom d'utilisateur : `admin`  
+   - Mot de passe : `password`  
+- Redirection vers le tableau après connexion  
+- Affichage d'un message d'erreur en cas de mauvais identifiants  
+- Interface responsive avec style moderne  
+
+---
+
+## Captures d'écran  
+**Page de connexion :**  
+![Connexion](./src/img/connexion.png)  
+
+**Tableau des utilisateurs :**  
+![Tableau](./src/img/tableau.png)  
+
+---
+
+## Installation & Lancement  
+1. **Clone le dépôt :**  
+```bash
+git clone https://github.com/ton-compte/test-automatisation-react.git
+cd test-automatisation-react
+npm install
+npm run dev
